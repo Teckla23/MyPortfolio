@@ -1,0 +1,141 @@
+/* Exact Aesthetic Canva Minimalist Theme Colors & Presets */
+body {
+    background-color: #f2efe9; /* Warm luxury ivory matte canvas background */
+    color: #242321; /* Sharp editorial rich dark charcoal text */
+    font-family: "Didot", "Playfair Display", "Times New Roman", serif;
+    letter-spacing: 0.01em;
+}
+
+/* Screen Wrapper Centering Architecture - Acts as full screen containers */
+.viewport-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1.5rem;
+}
+
+/* Alternating Background Offset Color to divide sections visually */
+.bg-card-offset {
+    background-color: #eae7e1 !important;
+}
+
+/* Fixed Horizontal Presentation Canvas Layout - Forces Landscape Split Style */
+.canva-presentation-card {
+    background-color: #fdfbfa; /* Warm paper-white inner background card */
+    width: 100%;
+    max-width: 980px; /* Expands width to allow landscape presentation style */
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.06);
+    padding: 4.5rem 6rem;
+    position: relative;
+    
+    /* Enforces consistent horizontal split layout across widths */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Left Hand Split: Layout boundary parameters */
+.left-column-split {
+    flex: 0 0 52%;
+    max-width: 52%;
+    padding-right: 20px;
+}
+
+/* Right Hand Split: Content text block parameters */
+.right-column-split {
+    flex: 0 0 48%;
+    max-width: 48%;
+    padding-left: 3rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Profile Left-Hand Visual Frame with Slate Outline Border Accent Color */
+.visual-frame-container {
+    width: 100%;
+    border: 2px solid #3f3d56; /* Elegant dark slate accent border */
+    padding: 12px;
+    background-color: transparent;
+}
+.visual-content-placeholder {
+    width: 100%;
+    height: auto;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+/* Typography Polish Rules */
+.name-heading {
+    line-height: 1.1; 
+    letter-spacing: -0.01em; 
+    font-size: 3.5rem; 
+    color: #1c1b1a;
+}
+.section-display-heading {
+    font-size: 2.5rem;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #1c1b1a;
+    letter-spacing: 0.02em;
+}
+.canva-sans-label {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.35em;
+    color: #54524f;
+    font-weight: 600;
+}
+.canva-summary-text {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.75;
+    color: #42403d;
+}
+
+/* Minimalist Card Accents */
+.editorial-line {
+    width: 60px;
+    height: 2px;
+    background-color: #242321;
+}
+.canva-corner-mark {
+    position: absolute;
+    bottom: 2rem;
+    right: 2.5rem;
+    opacity: 0.5;
+    font-size: 0.8rem;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+/* Link Cleanliness Configuration */
+.interactive-link {
+    color: #242321;
+    font-weight: 500;
+    border-bottom: 1px solid #242321;
+    transition: all 0.2s ease;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.9rem;
+}
+.interactive-link:hover {
+    color: #706f6c;
+    border-color: #706f6c;
+    text-decoration: none;
+}
+
+/* Premium Smooth Slide-In Load Animation Sequence */
+.animate-fade-slide {
+    opacity: 0;
+    transform: translateY(25px);
+    animation: customFadeSlideIn 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+@keyframes customFadeSlideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
